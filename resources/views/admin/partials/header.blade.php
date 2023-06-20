@@ -20,6 +20,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.museums.index')}}">List Museums</a>
+                   
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('admin.artists.index')}}">Artists</a>
                 </li>
             </ul>
 
@@ -47,7 +51,7 @@
                             <a class="dropdown-item" href="{{ url('profile') }}">{{ __('Profile') }}</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                    document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
