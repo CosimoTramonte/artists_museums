@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Artist</h1>
 
-        <table class="table table-hover">
+        <table class="table table-hover table-dark table-striped ">
             <thead>
                 <tr>
                     <th scope="col">Id</th>
@@ -19,7 +19,7 @@
                         <td>{{ $artist->id }}</td>
                         <td>{{ $artist->name }}</td>
                         <td>{{ $artist->date_of_birth }}</td>
-                        <td> <a href="{{ route('admin.artists.show', $artist) }}" class="btn btn-dark"><i
+                        <td> <a href="{{ route('admin.artists.show', $artist) }}" class="btn btn-success"><i
                             class="fa-solid fa-eye"></i></a></td>
                     </tr>
                 @endforeach
