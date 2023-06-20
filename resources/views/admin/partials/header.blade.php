@@ -19,6 +19,10 @@
                     <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.museums.index')}}">List Museums</a>
+                   
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('admin.artists.index')}}">Artists</a>
                 </li>
             </ul>
