@@ -20,6 +20,7 @@
             <th scope="col">City</th>
             <th scope="col">Address</th>
             <th scope="col">Open hour</th>
+            <th scope="col">Guest Artists</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
@@ -31,6 +32,13 @@
                     <td>{{$museum->city}}</td>
                     <td>{{$museum->address}}</td>
                     <td>{{ $museum->open_hour }}</td>
+                    <td>
+                        @forelse ($museum->artists as $artist)
+                            <span>{{ $artist->name }},</span>
+                        @empty
+                            <span>no artists</span>
+                        @endforelse
+                    </td>
                     <td>
                         <a href="#" class="btn btn-success">SHOW</a>
                         <a href="#" class="btn btn-warning">EDIT</a>

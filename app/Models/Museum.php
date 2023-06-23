@@ -12,6 +12,10 @@ class Museum extends Model
 {
     use HasFactory;
 
+    public function artists(){
+        return $this->belongsToMany(Artist::class);
+    }
+
         public static function generateSlug($str){
 
         $slug = Str::slug($str, '-');
