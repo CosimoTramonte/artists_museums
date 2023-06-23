@@ -15,9 +15,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            ArtistTableSeeder::class,
+
             MuseumTableSeeder::class,
-            ArtistsMuseumsTableSeeder::class,
+            ArtistTableSeeder::class,
+            ArtworksTableSeeder::class
         ]);
+    
     }
 }
