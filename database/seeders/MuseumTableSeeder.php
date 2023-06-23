@@ -16,7 +16,7 @@ class MuseumTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for ($i=0; $i < 15; $i++) {
+        for ($i=0; $i < 30; $i++) {
             $new_museum = new Museum();
             $new_museum->name = $faker->name();
             $new_museum->slug = Museum::generateSlug($new_museum['name']);

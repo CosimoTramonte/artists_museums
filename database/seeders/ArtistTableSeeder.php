@@ -16,7 +16,7 @@ class ArtistTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        for ($i=0; $i < 15; $i++) {
+        for ($i=0; $i < 30; $i++) {
             $new_artist = new Artist();
             $new_artist->name = $faker->name();
             $new_artist->slug = Artist::generateSlug($new_artist['name']);

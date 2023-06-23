@@ -12,9 +12,14 @@ class Artist extends Model
 {
     use HasFactory;
 
+
     public function artworks(){
 
         return $this->hasMany(Artwork::class);
+
+
+    public function museums(){
+        return $this->belongsToMany(Museum::class);
 
     }
 
